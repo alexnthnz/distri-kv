@@ -1,0 +1,19 @@
+node:
+  node_id: "node2"
+  address: "localhost:9001"
+  data_dir: "./data/node2"
+  max_mem_items: 1000
+  quorum:
+    n: 3  # Replication factor
+    r: 2  # Read quorum
+    w: 2  # Write quorum
+  cluster_nodes:
+    - "localhost:9000"
+    - "localhost:9002"
+
+api:
+  port: 8081
+
+log:
+  level: "info"
+  format: "text" 
